@@ -1,11 +1,10 @@
 import { NavLink } from "react-router-dom";
+import './header.css'
 
 const Header = () => {
-    const links = <>
-    <li><NavLink to="/">j</NavLink></li>
-    <li><NavLink to="/u">j</NavLink></li>
-    </>
+   
     return (
+      <nav>
         <div>
             <div className="navbar bg-base-100 shadow-sm">
   <div className="navbar-start">
@@ -16,23 +15,32 @@ const Header = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        {links}
+        <li><a><NavLink to="/">Home</NavLink></a></li>
+        <li><a><NavLink to="/listed">Listed Books</NavLink></a></li>
+        <li><a><NavLink to="/read">Pages to Read</NavLink></a></li>
+    
         
        
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <a className="btn btn-ghost text-xl">Book Review</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      {links}
+       <li><a><NavLink to="/">Home</NavLink></a></li>
+        <li><a><NavLink to="/listed">Listed Books</NavLink></a></li>
+        <li><a><NavLink to="/read">Pages to Read</NavLink></a></li>
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <div className="flex items-center gap-2">
+    <button className="btn primary-bg rounded-md ">Sign in</button>
+    <button className="btn bg-[#59C6D2] rounded-md ">Sign Up</button>
+    </div>
   </div>
 </div>
         </div>
+        </nav>
     );
 };
 
