@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
+import { saveReadBook } from "../utility/booksList";
 
 const BookDetails = () => {
     const book = useLoaderData()
@@ -7,6 +8,7 @@ const BookDetails = () => {
     const {id} = useParams()
     const currentBook = book.find(data => data.bookId === id)
     const handleReadbtn = () => {
+        saveReadBook(id)
         toast('Added on Read books')
     }
     const handleWishbtn = () => {
