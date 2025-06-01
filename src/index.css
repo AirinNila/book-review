@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 .primary-bg {
     background-color: #23BE0A;
@@ -8,4 +9,12 @@
 
 .primary-c {
     color: #23BE0A;
+}
+
+.playf {
+      font-family: "Playfair Display", serif;
+}
+
+.works {
+     font-family: "Work Sans", sans-serif;
 }

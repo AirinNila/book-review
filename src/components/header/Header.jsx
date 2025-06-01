@@ -4,9 +4,9 @@ import './header.css'
 const Header = () => {
    
     return (
-      <nav>
+      <nav className="container mx-auto">
         <div>
-            <div className="navbar bg-base-100 shadow-sm">
+            <div className="navbar bg-base-100 ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -33,9 +33,9 @@ const Header = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <div className="flex items-center gap-2">
-    <button className="btn primary-bg rounded-md ">Sign in</button>
-    <button className="btn bg-[#59C6D2] rounded-md ">Sign Up</button>
+    <div className="flex items-center gap-2 ">
+    <button className="btn primary-bg rounded-md  text-white">Sign in</button>
+    <button className="btn bg-[#59C6D2] rounded-md text-white">Sign Up</button>
     </div>
   </div>
 </div>
