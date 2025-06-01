@@ -2,10 +2,10 @@
 import { Link } from 'react-router-dom';
 
 const BookCard = ({data}) => {
-    const {bookName, author, image, category, rating} = data
+    const {bookName, author, image, category, rating, bookId} = data
     return (
         <div>
-            <Link to="/bookdetails">
+            <Link to={`/bookDetailes/${bookId}`}>
                 <div className='flex flex-col p-4 rounded-md border-2 border-[#13131326] gap-4'>
                     <div className='flex justify-center items-center bg-[#F3F3F3] rounded-md h-64'>
                     <img src={image} alt="" className='w-32 shadow-xl' />
