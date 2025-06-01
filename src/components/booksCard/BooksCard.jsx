@@ -10,9 +10,9 @@ const BooksCard = () => {
         .then(data => setBooks(data))
     },[])
 
-    const handleShowAllBtn = () => {
-        
-    }
+    const [seeAll, setSeeAll] = useState(6)
+
+ 
    
     return (
         <div className="container mx-auto mt-4">
@@ -20,10 +20,12 @@ const BooksCard = () => {
             <h2 className="playf text-3xl font-bold">Books Card</h2>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-3"> 
                 {
-                    books.slice(0,6).map(data => <BookCard key={data.bookId} data={data}></BookCard>)
+                    books.slice(0,seeAll).map(data => <BookCard key={data.bookId} data={data}></BookCard>)
                 }
             </div>
-            <button className="btn primary-bg p-4 text-white">Show All</button>
+            <div className={seeAll === books.length && 'hidden'}>
+            <button onClick={() => setSeeAll(books.length)} className="btn primary-bg p-4 text-white">Show All</button>
+            </div>
             </div>
         </div>
     );
