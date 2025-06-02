@@ -6,6 +6,7 @@ const BookDetails = () => {
     const book = useLoaderData()
 
     const {id} = useParams()
+   
     const currentBook = book.find(data => data.bookId === id)
     const handleReadbtn = () => {
         saveReadBook(id)

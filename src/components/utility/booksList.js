@@ -8,10 +8,10 @@ const getStoredReadBook = () => {
 
 const saveReadBook = id => {
     const storedReadBooks = getStoredReadBook()
-    console.log(id, storedReadBooks)
-    const exixt = storedReadBooks.find(bookId => bookId === id);
+   
+    const exixt = storedReadBooks.find(bookId => bookId === id)
     if(!exixt){
-        storedReadBooks.push(id);
+        storedReadBooks.push(id)
         localStorage.setItem('read-book', JSON.stringify(storedReadBooks))
     }
 }
