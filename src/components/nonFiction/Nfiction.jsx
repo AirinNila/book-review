@@ -8,7 +8,7 @@ const Nfiction = () => {
             fetch('nFiction.json')
             .then(res => res.json())
             .then(data => setNFictionBooks(data))
-        } ,[])
+        },[])
     return (
           <div className='container mx-auto'>
                 <div className="flex flex-col justify-center items-center gap-4">
