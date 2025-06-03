@@ -19,7 +19,7 @@ const Header = () => {
         <li><a><NavLink to="/listed">Listed Books</NavLink></a></li>
         <li><a><NavLink to="/read">Pages to Read</NavLink></a></li>
         <li><a><NavLink to="/fiction">Fiction</NavLink></a></li>
-        <li><a><NavLink to="/nonfiction">Non-Fiction</NavLink></a></li>
+        <li><a><NavLink to="/nfiction">Non-Fiction</NavLink></a></li>
         
        
       </ul>
