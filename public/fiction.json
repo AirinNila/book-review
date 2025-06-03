@@ -1,0 +1,68 @@
+[
+  {
+    "id": "F001",
+    "bookName": "The Midnight Library",
+    "author": "Matt Haig",
+    "publishYear": 2020,
+    "rating": 4.6,
+    "review": "The Midnight Library is a beautiful exploration of regret, second chances, and the infinite possibilities that life holds. Matt Haig captures the essence of human emotion in a way that is both profound and comforting. The concept of an in-between library where lives can be revisited is creative and soul-stirring. This novel is perfect for anyone feeling lost or overwhelmed. It offers hope in a truly magical and philosophical way.",
+    "numberOfPages": 304,
+    "tags": ["Fantasy", "Philosophical", "Contemporary"],
+    "image": "https://m.media-amazon.com/images/I/81iA3+0v0bL.jpg"
+  },
+  {
+    "id": "F002",
+    "bookName": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "publishYear": 2018,
+    "rating": 4.8,
+    "review": "This novel blends mystery with a rich coming-of-age story and a tribute to nature. The writing is vivid, poetic, and incredibly detailed. Delia Owens paints the marshland as a character of its own. The protagonist, Kya, is both vulnerable and strong — a truly unforgettable character. The plot is deeply moving and the twist at the end is both shocking and satisfying. A must-read for fiction lovers.",
+    "numberOfPages": 384,
+    "tags": ["Mystery", "Nature", "Drama"],
+    "image": "https://m.media-amazon.com/images/I/81WWiiLg5XL.jpg"
+  },
+  {
+    "id": "F003",
+    "bookName": "It Ends with Us",
+    "author": "Colleen Hoover",
+    "publishYear": 2016,
+    "rating": 4.5,
+    "review": "A powerful, emotional rollercoaster that deals with the complexities of love and abuse. Colleen Hoover doesn’t shy away from heavy themes, and she presents them in a raw and real way. The storytelling is compelling, with relatable characters and a heart-wrenching plot. This book challenges your perspective on right and wrong. It’s not just a romance; it’s a deep dive into resilience and self-worth.",
+    "numberOfPages": 376,
+    "tags": ["Romance", "Emotional", "Contemporary"],
+    "image": "https://m.media-amazon.com/images/I/81s6DUyQCZL.jpg"
+  },
+  {
+    "id": "F004",
+    "bookName": "The Night Circus",
+    "author": "Erin Morgenstern",
+    "publishYear": 2011,
+    "rating": 4.7,
+    "review": "A dazzling and dreamlike tale of magic, love, and rivalry. The Night Circus captivates you with its rich, lyrical prose and imaginative setting. The circus itself feels alive — mysterious and enchanting. The romantic tension between the protagonists is intense yet delicate. It's a slow burn, but every page is worth it for the atmosphere alone. Pure escapism for those who love magical realism.",
+    "numberOfPages": 387,
+    "tags": ["Fantasy", "Romance", "Magic"],
+    "image": "https://m.media-amazon.com/images/I/71aFt4+OTOL.jpg"
+  },
+  {
+    "id": "F005",
+    "bookName": "The Book Thief",
+    "author": "Markus Zusak",
+    "publishYear": 2005,
+    "rating": 4.9,
+    "review": "Narrated by Death, this novel offers a unique perspective on Nazi Germany through the eyes of a young girl. The writing is poetic and haunting, and the characters feel heartbreakingly real. It’s a story about survival, courage, and the power of words. Every chapter leaves a lasting impression. A deeply emotional and unforgettable read that lingers in your thoughts long after the last page.",
+    "numberOfPages": 552,
+    "tags": ["Historical", "War", "Drama"],
+    "image": "https://m.media-amazon.com/images/I/81eB+7+CkUL.jpg"
+  },
+  {
+    "id": "F006",
+    "bookName": "Circe",
+    "author": "Madeline Miller",
+    "publishYear": 2018,
+    "rating": 4.6,
+    "review": "Circe is a brilliant feminist retelling of the Greek myth, told from the witch-goddess's perspective. Miller’s prose is lyrical and beautifully immersive. The character development is rich and deeply human. Circe's journey from loneliness to empowerment is both painful and inspiring. It's a book that redefines ancient myth through a modern, emotional lens. Perfect for lovers of mythology and strong female leads.",
+    "numberOfPages": 393,
+    "tags": ["Mythology", "Fantasy", "Feminism"],
+    "image": "https://m.media-amazon.com/images/I/81eB+7+CkUL.jpg"
+  }
+]

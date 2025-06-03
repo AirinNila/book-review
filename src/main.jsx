@@ -11,6 +11,8 @@ import Home from './components/home/Home.jsx';
 import Listed from './components/listed/Listed.jsx';
 import Read from './components/read/Read.jsx';
 import BookDetails from './components/bookDetails/BookDetails.jsx';
+import Fiction from './components/fiction/Fiction.jsx';
+import Nfiction from './components/nonFiction/Nfiction.jsx';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +36,14 @@ const router = createBrowserRouter([
         path: '/bookDetailes/:id',
         element: <BookDetails></BookDetails>,
         loader: () => fetch('../book.json')
+      },
+      {
+        path: '/fiction',
+        element: <Fiction></Fiction>
+      },
+      {
+        path: '/nfiction',
+        element: <Nfiction></Nfiction>
       }
     ]
   },
