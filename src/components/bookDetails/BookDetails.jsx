@@ -8,6 +8,7 @@ const BookDetails = () => {
     const {id} = useParams()
    
     const currentBook = book.find(data => data.bookId === id)
+    console.log(id)
     const handleReadbtn = () => {
         saveReadBook(id)
         toast('Added on Read books')

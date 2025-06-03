@@ -4,6 +4,7 @@ const getStoredReadBook = () => {
     if(getStoredReadBooks){
         return JSON.parse(getStoredReadBooks)
     }
+    return [];
 }
 
 const saveReadBook = id => {
@@ -15,5 +16,7 @@ const saveReadBook = id => {
         localStorage.setItem('read-book', JSON.stringify(storedReadBooks))
     }
 }
+
+
 
 export{getStoredReadBook, saveReadBook}
