@@ -9,6 +9,8 @@ const Listed = () => {
     const allBooks = useLoaderData()
     const [readBooks, setReadBooks] = useState([])
     const [wishlistBooks, setWishlistBooks] = useState([])
+    const [sortRating , setSortRating] = useState('')
+   
     
     
    
@@ -26,6 +28,30 @@ const Listed = () => {
         
     }
     },[])
+
+    const handleRating = type => {
+        
+       
+        setSortRating(type)
+        if(type === 'Rating'){
+            const sorted = [...readBooks].sort((a,b) => b.rating-a.rating)
+            setReadBooks(sorted)
+            const wSorted = [...wishlistBooks].sort((a,b) => b.rating-a.rating)
+            setWishlistBooks(wSorted)
+        }
+        if(type === 'nbrPage'){
+            const sorted = [...readBooks].sort((a,b) => a.totalPages-b.totalPages)
+            setReadBooks(sorted)
+            const wSorted = [...wishlistBooks].sort((a,b) => a.totalPages-b.totalPages)
+            setWishlistBooks(wSorted)
+        }
+        if(type === 'year'){
+            const sorted = [...readBooks].sort((a,b) => a.yearOfPublishing-b.yearOfPublishing)
+            setReadBooks(sorted)
+            const wSorted = [...wishlistBooks].sort((a,b) => a.yearOfPublishing-b.yearOfPublishing)
+            setWishlistBooks(wSorted)
+        }
+    }
      
     return (
         <div className="container mx-auto  mt-6">
@@ -40,9 +66,9 @@ const Listed = () => {
                                 <p className="text-sm"><SlArrowDown /></p>
                             </div> </summary>
                         <ul className="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm des text-base">
-                            <li><a>Rating</a></li>
-                            <li><a>Number of Pages</a></li>
-                            <li><a>Publisher year</a></li>
+                            <li><button onClick={() => handleRating('Rating')}>Rating</button></li>
+                            <li><button onClick={() => handleRating('nbrPage')}>Number of Pages</button></li>
+                            <li><button onClick={() => handleRating('year')}>Publisher year</button></li>
                         </ul>
                     </details>
                 </div>
@@ -63,7 +89,7 @@ const Listed = () => {
                         <div className="tab-content bg-base-100 border-base-300 p-6">
                             <div className="flex flex-col gap-6">
                            {
-                            wishlistBooks.map(data => <WishlistBook key={data.bookId} data={data}></WishlistBook>)
+                            wishlistBooks.map(data => <WishlistBook  key={data.bookId} data={data}></WishlistBook>)
                            }
                            </div>
                         </div>

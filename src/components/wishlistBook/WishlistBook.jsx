@@ -1,7 +1,7 @@
 import { IoLocationOutline , IoPeopleOutline} from "react-icons/io5";
 import { RiPagesLine } from "react-icons/ri";
 const WishlistBook = ({data}) => {
-    const {bookName, author, image, yearOfPublishing, publisher, totalPages} = data;
+    const {bookName, author, image, yearOfPublishing, publisher, totalPages, rating, category} = data;
     return (
         <div>
              <div className="flex flex-col gap-4 md:flex-row justify-center items-center text-center md:text-start md:justify-start md:items-start border-2 border-gray-300 rounded-lg p-4">
@@ -30,8 +30,8 @@ const WishlistBook = ({data}) => {
                                     </div>
                                     <hr />
                                     <div className="flex items-center gap-3">
-                                        <div className="rounded-full py-2 px-4 text-sm md:text-lg font-semibold bg-[#328EFF26] text-[#328EFF]"><button>Categoty:</button></div>
-                                        <div className="rounded-full py-2 px-4 text-sm md:text-lg font-semibold bg-[#FFAC3326] text-[#FFAC33]"><button>Rating:</button></div>
+                                        <div className="rounded-full py-2 px-4 text-sm md:text-lg font-semibold bg-[#328EFF26] text-[#328EFF]"><button>Categoty:{category}</button></div>
+                                        <div className="rounded-full py-2 px-4 text-sm md:text-lg font-semibold bg-[#FFAC3326] text-[#FFAC33]"><button>Rating:{rating}</button></div>
                                         <div className="rounded-full py-2 px-4 text-sm md:text-lg font-semibold bg-[#23BE0A26] text-[#23BE0A]"><button>View Details</button></div>
                                     </div>
                                 </div>
