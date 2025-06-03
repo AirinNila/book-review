@@ -4,21 +4,21 @@ const ReadBook = ({data}) => {
     const {bookName, author, image, yearOfPublishing, publisher, totalPages} = data;
     return (
         <div>
-             <div className="flex flex-col gap-4 md:flex-row justify-start items-start border-2 border-gray-300 rounded-lg p-4">
+             <div className="flex flex-col gap-4 md:flex-row justify-center items-center text-center md:text-start md:justify-start md:items-start border-2 border-gray-300 rounded-lg p-4">
                                 <div className="flex rounded-lg bg-gray-300 p-4 md:px-24 md:py-14 items-center justify-center">
                                     <img src={image} alt="" className="h-64 md:h-80 rounded-md" />
                                 </div>
                                 <div className="flex flex-col gap-4">
                                     <h3 className="playf text-bold title text-2xl">{bookName}</h3>
                                     <p className="dest ">By: {author}</p>
-                                    <div className='flex items-center gap-3 primary-c font-semibold'>
+                                    <div className='flex flex-col md:flex-row items-center gap-3 primary-c font-semibold'>
                                         <p className='bg-[#23BE0A0D] py-2 px-4 rounded-full flex items-center'>{data.tags[0]}</p>
                                         <p className='bg-[#23BE0A0D] py-2 px-4 rounded-full flex items-center'>{data.tags[1]}</p>
                                         <div className="flex items-center dest text-base gap-2">
                                             <p><IoLocationOutline /></p>
                                             <p className="dest">Year of publishing: {yearOfPublishing}</p>
                                         </div>                                    </div>
-                                    <div className="flex items-center text-base text-[#13131399] gap-6 ">
+                                    <div className="flex items-center justify-center md:justify-start text-base text-[#13131399] gap-6 ">
                                         <div className="flex items-center gap-2">
                                             <p><IoPeopleOutline /></p>
                                             <p>{publisher}</p>
@@ -30,9 +30,9 @@ const ReadBook = ({data}) => {
                                     </div>
                                     <hr />
                                     <div className="flex items-center gap-3">
-                                        <div className="rounded-full py-2 px-4 text-lg font-semibold bg-[#328EFF26] text-[#328EFF]"><button>Categoty:</button></div>
-                                        <div className="rounded-full py-2 px-4 text-lg font-semibold bg-[#FFAC3326] text-[#FFAC33]"><button>Rating:</button></div>
-                                        <div className="rounded-full py-2 px-4 text-lg font-semibold bg-[#23BE0A26] text-[#23BE0A]"><button>View Details</button></div>
+                                        <div className="rounded-full py-2 px-4 text-sm md:text-lg font-semibold bg-[#328EFF26] text-[#328EFF]"><button>Categoty:</button></div>
+                                        <div className="rounded-full py-2 px-4 text-sm md:text-lg font-semibold bg-[#FFAC3326] text-[#FFAC33]"><button>Rating:</button></div>
+                                        <div className="rounded-full py-2 px-4 text-sm md:text-lg font-semibold bg-[#23BE0A26] text-[#23BE0A]"><button>View Details</button></div>
                                     </div>
                                 </div>
             </div>
