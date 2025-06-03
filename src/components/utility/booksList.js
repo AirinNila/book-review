@@ -1,6 +1,7 @@
 
 const getStoredReadBook = () => {
     const getStoredReadBooks = localStorage.getItem('read-book')
+    console.log(getStoredReadBooks)
     if(getStoredReadBooks){
         return JSON.parse(getStoredReadBooks)
     }

@@ -18,6 +18,7 @@ const Listed = () => {
         const wishlistId = getStoredWishlisttBooks()
         const wishlistBooks = allBooks.filter(book => wishlistId.includes(book.bookId))
         setWishlistBooks(wishlistBooks)
+        
     } ,[])
 
     useEffect( () => {

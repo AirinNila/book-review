@@ -7,11 +7,12 @@ const Read = () => {
     const [readBooks, setReadBooks] = useState([])
     useEffect( () => {
         const readId = getStoredReadBook()
-        const parsId = parseInt(readId)
-        const readedBooks = allBooks.filter(book => readId.includes(book.bookId))
+        const readedBooks =  allBooks.filter(book => readId.includes(book.bookId))
         setReadBooks(readedBooks)
-        console.log(readBooks, readId, parsId)
+        
     },[])
+
+    console.log(readBooks)
     return (
         <div>
             
