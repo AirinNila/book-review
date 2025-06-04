@@ -55,8 +55,8 @@ const Listed = () => {
     }
      
     return (
-        <div className="container mx-auto  mt-6">
-            <div className="flex flex-col justify-center items-center gap-4 ">
+        <div className="container mx-auto   mt-6">
+            <div className="flex flex-col justify-center items-center gap-4">
                 <div className="flex justify-center items-center p-4 w-full md:p-10 bg-[#1313130D] rounded-lg">
                     <h3 className="text-2xl font-extrabold title">Books</h3>
                 </div>
@@ -73,13 +73,13 @@ const Listed = () => {
                         </ul>
                     </details>
                 </div>
-                <div>
+                <div className="w-full">
                     {/* name of each tab group should be unique */}
                     <div className="tabs tabs-box">
 
                         <input type="radio" name="my_tabs_6" className="tab" aria-label="Read Books" defaultChecked />
                         <div className="tab-content bg-base-100 border-base-300 p-6">
-                            <div className="flex flex-col gap-6">
+                            <div className="flex  flex-col gap-6">
                              {
                                 readBooks.map(data => <ReadBook key={data.bookId} data={data}></ReadBook>)
                              }

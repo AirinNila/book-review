@@ -30,8 +30,8 @@ const WishlistBook = ({data}) => {
                                     </div>
                                     <hr />
                                     <div className="flex items-center gap-3">
-                                        <div className="rounded-full py-2 px-4 text-sm md:text-lg font-semibold bg-[#328EFF26] text-[#328EFF]"><button>Categoty:{category}</button></div>
-                                        <div className="rounded-full py-2 px-4 text-sm md:text-lg font-semibold bg-[#FFAC3326] text-[#FFAC33]"><button>Rating:{rating}</button></div>
+                                        <div className="rounded-full p-2 w-28 md:w-48 md:py-2 md:px-4 text-sm md:text-lg font-semibold bg-[#328EFF26] text-[#328EFF]"><button>Categoty:{category}</button></div>
+                                        <div className="rounded-full py-2 px-4 text-sm md:text-lg font-semibold bg-[#FFAC3326] text-[#FFAC33]"><button>Rating: {rating}</button></div>
                                         <div className="rounded-full py-2 px-4 text-sm md:text-lg font-semibold bg-[#23BE0A26] text-[#23BE0A]"><button>View Details</button></div>
                                     </div>
                                 </div>

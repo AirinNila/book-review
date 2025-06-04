@@ -18,7 +18,7 @@ const BooksCard = () => {
         <div className="container mx-auto mt-4">
             <div className="flex flex-col justify-center items-center gap-4">
             <h2 className="playf text-3xl font-bold">Books Card</h2>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-3"> 
+            <div className="grid grid-cols-1 p-3 gap-4 md:grid-cols-3"> 
                 {
                     books.slice(0,seeAll).map(data => <BookCard key={data.bookId} data={data}></BookCard>)
                 }

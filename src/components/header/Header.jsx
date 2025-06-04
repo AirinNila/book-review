@@ -24,7 +24,7 @@ const Header = () => {
        
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">Book Review</a>
+    <a className="btn btn-ghost text-lg md:text-3xl">Book Review</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -37,8 +37,8 @@ const Header = () => {
   </div>
   <div className="navbar-end">
     <div className="flex items-center gap-2 ">
-    <button className="btn primary-bg rounded-md  text-white">Sign in</button>
-    <button className="btn bg-[#59C6D2] rounded-md text-white">Sign Up</button>
+    <button className="btn primary-bg rounded-md md:text-base text-sm text-white">Sign in</button>
+    <button className="btn bg-[#59C6D2] rounded-md md:text-base text-sm text-white">Sign Up</button>
     </div>
   </div>
 </div>
