@@ -1,21 +1,38 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import { saveReadBook, saveWishlistBooks } from "../utility/booksList";
+import { useState } from "react";
 
 const BookDetails = () => {
     const book = useLoaderData()
-
+    const [clicked, setClicked] = useState(false)
     const {id} = useParams()
    
     const currentBook = book.find(data => data.bookId === id)
     console.log(id)
     const handleReadbtn = () => {
+        
         saveReadBook(id)
-        toast('Added on Read books')
+        setClicked(true)
+        if(clicked === false){
+            toast('Added on Read books')
+        }
+        else{
+            toast('Already Added')
+        }
+        
     }
     const handleWishbtn = () => {
+       
         saveWishlistBooks(id)
-        toast('Added on Wishlist')
+        setClicked(true)
+        if(clicked === false){
+            toast('Added on Wishlist')
+        }
+        else{
+            toast('Already Added')
+        }
+        
     }
        
     return (
