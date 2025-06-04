@@ -13,11 +13,13 @@ import Read from './components/read/Read.jsx';
 import BookDetails from './components/bookDetails/BookDetails.jsx';
 import Fiction from './components/fiction/Fiction.jsx';
 import Nfiction from './components/nonFiction/Nfiction.jsx';
+import ErrorPage from './components/errorPage/ErrorPage.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage> ,
     children: [
       {
         path: '/',
