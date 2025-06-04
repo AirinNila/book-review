@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import BookCard from "../bookCard/bookCard";
+import BookCard from "../bookCard/BookCard";
 
 
 const BooksCard = () => {
