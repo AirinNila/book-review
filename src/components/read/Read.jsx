@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredReadBook } from "../utility/booksList";
-import { BarChart, Bar, XAxis, YAxis } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis , ResponsiveContainer } from 'recharts';
 
 const Read = () => {
     const allBooks = useLoaderData()
@@ -13,15 +13,7 @@ const Read = () => {
 
     }, [])
 
-    // const customShapeBarChart = (
-    //     <BarChart width={600} height={300} data={readBooks}>
-    //          <XAxis dataKey={readBooks.bookName} />
-    //           <YAxis />
-    //           <Bar dataKey={readBooks.totalPages} fill="#8884d8"
-    //   shape={<TriangleBar />} />
-    //     </BarChart>
 
-    // );
     const TriangleBar = (props) => {
         const { fill, x, y, width, height } = props;
         return (
@@ -40,12 +32,14 @@ const Read = () => {
     console.log(readBooks)
     return (
         <div>
-            <BarChart width={700} height={300} data={readBooks}>
+            <ResponsiveContainer width="80%" height={300} >
+            <BarChart data={readBooks}>
                 <XAxis dataKey="bookName" />
                 <YAxis />
                 <Bar dataKey="totalPages" fill="#23BE0A"
                     shape={<TriangleBar />} />
             </BarChart>
+            </ResponsiveContainer>
         </div>
     );
 };
